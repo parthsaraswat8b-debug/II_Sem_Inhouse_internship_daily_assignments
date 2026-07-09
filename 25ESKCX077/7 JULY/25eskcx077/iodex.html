@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Landing Page Assignment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <h1 class="logo">Assignment</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#signup">Signup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="tag">Interactive Landing Page</p>
+        <h2>Build a modern website with hover effects and validation</h2>
+        <p class="hero-text">
+          This page includes an interactive image hover effect, feature cards, and a signup form with validation.
+        </p>
+        <a href="#signup" class="btn">Get Started</a>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-box">
+          <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80"
+            alt="Laptop on desk"
+          />
+          <div class="image-overlay">Hover Effect</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container" id="features">
+      <h3>What’s Included</h3>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h4>Hover Effects</h4>
+          <p>Cards and image gently scale when you move your mouse over them.</p>
+        </article>
+
+        <article class="feature-card">
+          <h4>Form Validation</h4>
+          <p>Checks name, email, and password before letting the form submit.</p>
+        </article>
+
+        <article class="feature-card">
+          <h4>Responsive Layout</h4>
+          <p>Looks good on mobile, tablet, and desktop screens.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="signup container" id="signup">
+      <h3>Signup Form</h3>
+
+      <form id="signupForm" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" />
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" />
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" />
+          <small class="error"></small>
+        </div>
+
+        <button type="submit" class="btn submit-btn">Submit</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Assignment Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
