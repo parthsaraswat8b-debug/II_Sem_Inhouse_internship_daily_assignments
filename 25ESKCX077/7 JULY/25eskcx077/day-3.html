@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Parth Saraswat</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    padding: 30px;
+    max-width: 700px;
+    gap: 30px;
+  }
+
+  .photos {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 12px;
+  }
+
+  .photo {
+    width: 130px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #d9e2ec;
+  }
+
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info h1 {
+    margin: 0 0 8px 0;
+    color: #1a2433;
+    font-size: 28px;
+  }
+
+  .info p {
+    margin: 4px 0;
+    color: #45566b;
+    font-size: 16px;
+  }
+
+  .badge {
+    margin-top: 14px;
+    align-self: flex-start;
+    background: #2563eb;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="photos">
+      <div class="photo"><img src="file1.jpeg" alt="Photo 1"></div>
+      <div class="photo"><img src="file2.jpeg" alt="Photo 2"></div>
+    </div>
+
+    <div class="info">
+      <h1>Parth Saraswat</h1>
+      <p>B.Tech Student</p>
+      <p>SKIT, Jaipur</p>
+      <div class="badge">Engineering Student</div>
+    </div>
+  </div>
+
+</body>
+</html>
